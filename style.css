@@ -1,0 +1,456 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,700');
+@import url('https://fonts.googleapis.com/css?family=Raleway:400,800');
+
+* { 
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+	font-family: 'Open Sans', sans-serif;
+}
+.container {
+	width: 100%;
+	max-width: 1200px;
+	margin: 0 auto;
+}
+/* === NAVIGATION ====*/
+header{
+	background-color: #313234;
+	height: auto;
+}
+header img {
+	padding: 10px 0;
+}
+.menu {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+	float: right;
+}
+.menu li {
+	float: left;
+	display: inline;
+}
+.menu a {
+	line-height: 50px;
+	padding: 0 20px;
+	display: inline-block;
+	color: #fff;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-weight: 700;
+}
+.menu a:hover {
+	color: #00C2EC;
+}
+/* === HERO SECTION === */
+.hero {
+	height: calc(100vh - 50px);
+	background-image: url(https://images.pexels.com/photos/296115/pexels-photo-296115.jpeg?w=940&h=650&auto=compress&cs=tinysrgb);
+	background-repeat: no-repeat;
+	background-size: 100% ;
+	position: relative;
+}
+.slogan {
+	position: absolute;
+	right: 0;
+	top: 50%;
+	transform: translateY(-50%);
+	background-color: rgba(0, 0, 0, 0.5);
+	width: 45%;
+	max-width: 800px;
+	text-transform: uppercase;
+	color: #fff;
+	padding: 15px;
+	font-size: 28px;
+}
+.slogan span {
+	font-weight: 300;
+}
+
+/* === BENEFITS === */
+.benefits {
+	margin-top: 40px;
+	text-align: center;
+}
+.benefits h2 {
+	text-transform: uppercase;
+}
+.benefits p {
+	color: grey;
+}
+.benefits .container {
+	margin: 50px auto;
+}
+.icon-container i {
+	display: block;
+	width: 100px;
+	height: 100px;
+	line-height: 100px;
+	margin: 0 auto;
+	border-radius: 15px;
+	color: #fff;
+	background-color: #313234;
+}
+.icon-container:hover h2{
+	color: #00C2EC;
+}
+.icon-container:hover i{
+	background-color: #00C2EC;
+}
+/* ====== FEATURE WORKS  ====== */
+.feature {
+	margin-bottom: 30px;
+}
+.feature h2, p {
+	text-align: center;
+}
+.feature p {
+	margin: 0 100px;
+}
+.feature h2 {
+	font-family: 'Raleway', sans-serif;
+	font-weight: 800;
+	text-transform: uppercase;
+	font-size: 50px;
+	color: #313234;
+	text-align: center;
+}
+/* ======= GALLERY ============*/
+.gallery [class*="col-"] {
+	position: relative;
+}
+.gallery img {
+	width: 100%;
+	height: 200px;
+	display: block;
+	object-fit: cover;
+}
+.gallery .layer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, .5);
+  opacity: 0;
+  text-align: center;
+  line-height: 200px;
+  transition: .5s;
+}
+.gallery .layer .fa {
+    font-size: 20px;
+    line-height: 30px;
+    width: 30px;
+    height: 30px;
+    border-radius: 5px;
+    background-color: white;
+    color: #303030;
+    margin: 0 30px;  
+}
+.gallery .layer:hover {
+	opacity: 1;
+	cursor: pointer;
+}
+/* ========== TEAM =========== */
+.team {
+	margin: 50px 200px;
+}
+.person {
+    margin: 0 auto;
+    text-align: center;
+}
+.person img {
+	width: 200px;
+	height: 200px;
+	border-radius: 50%;
+	margin: 0 auto;
+	object-fit: cover;
+}
+.person h3 {
+	text-align: center;
+	font-weight: 800;
+	color: #464646;
+	font-size: 20px;
+	width: 200px;
+}
+.person {
+	position: relative;
+}
+.person .layer {
+	position: absolute;
+	right: 0;
+	left: 0;
+	top: 0;
+	width: 200px;
+	height: 200px;
+	border-radius: 50%;
+	margin: 0 auto;
+	background: rgba(0, 0, 0, 0.5);
+	opacity: 0;
+}
+.person:hover .layer {
+    opacity: 1;
+}
+.person .layer h3 {
+	text-align: center;
+	line-height: 200px;
+	font-size: 25px;
+	font-weight: 700;
+	margin: 0;
+	color: #fff;
+}
+/* ====== BANER ============== */
+.baner {
+	background-image: url(https://images.pexels.com/photos/89786/cup-of-coffee-laptop-office-macbook-89786.jpeg?w=940&h=650&auto=compress&cs=tinysrgb);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: 30%;
+
+	font-family: 'Open Sans', sans-serif;
+}
+.baner h3 {
+	text-align: left;
+	font-size: 40px;
+	text-transform: uppercase;
+	font-family: 'Raleway', sans-serif;
+	font-weight: 800;
+	color: #fff;
+}
+.baner p {
+	color: #fff;
+	font-size: 20px;
+	text-align: left;
+	font-weight: 400;
+}
+.italic {
+	font-style: italic;
+}
+.normal, .italic {
+	padding-right:30px;
+}
+.baner .container {
+	position: relative;
+}
+.baner img {
+	position: absolute;
+	height: 300px;
+	bottom: 0;
+}
+/* ========== NUMBERS ==============*/
+.statistics p {
+	padding: 0;
+}
+.statistics .container {
+	margin-top: 0;
+}
+.numbers-title {
+	margin: 0 auto;
+}
+.numbers{
+	font-family: 'Raleway', sans-serif;
+	font-weight: 800;
+	font-size: 90px;
+	color: #313234;
+}
+.numbers-caption {
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 20px;
+	font-weight: 800;
+	margin: 0 auto;
+	color: #00C2EC;
+	display:block;
+	font-family: 'Raleway', sans-serif;
+}
+/* ======= FOOTER & COPYRIGHT============*/
+footer {
+	background: #323232;
+	color: #fff;
+}
+footer h3 {
+	text-align: left;
+}
+footer p {
+	color: #fff;
+}
+
+.footer-about p {
+	padding-right: 30px;
+}
+.footer-row {
+	margin: 0 100px;
+}
+.footer-row p {
+	text-align: left;
+}
+.copyright {
+	background: #252726;
+	color: #fff;
+}
+.copyright h3 {
+	text-align: center;
+	font-weight: 300;
+	font-family: 'Open Sans', sans-serif;
+}
+.contact {
+	padding-left: 50px;
+}
+.contact-header {
+	display: flex;
+	align-items: center;
+	font-size: 26px;
+}
+.contact-header:after {
+    content: "";
+    width: 100px;
+     border: 1px solid #fff;
+     margin: 15px;
+}
+/*==== FOOTER SOCIAL ICONS ==============*/
+.social-icon {
+	display: inline-block;
+	margin-right: 15px;
+	font-size: 20px;
+	text-align: center;
+	background: #00C2EC;
+	width: 40px;
+	height: 40px;
+	line-height: 40px;
+}
+.social-icon:hover {
+	cursor: pointer;
+}
+.social-icon a {
+	color: #fff;
+}
+/* ===== CLEARFIX METHOD ====== */
+.clearfix:before,
+.clearfix:after {
+    content: "";
+    display: table;
+}
+.clearfix:after {
+    clear: both;
+}
+/* ======== GRID ============= */
+.row:before,
+.row:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+[class*="col-"] {
+	float: left;
+	min-height: 1px;
+}
+.col-1 {width: 8.33%}
+.col-2 {width: 16.66%}
+.col-3 {width: 25%}
+.col-4 {width: 33.33%}
+.col-5 {width: 41.66%}
+.col-6 {width: 50%}
+.col-7 {width: 58.33%}
+.col-8 {width: 66.66%}
+.col-9 {width: 75%}
+.col-10 {width: 83.33%}
+.col-11 {width: 91.66%}
+.col-12 {width: 100%}
+
+.col-offset-0 {margin-left:  8.33%}
+.col-offset-1 {margin-left:  16.66%}
+.col-offset-2 {margin-left:  25%}
+.col-offset-3 {margin-left:  33.33%}
+.col-offset-4 {margin-left:  41.66%}
+.col-offset-5 {margin-left:  50%}
+.col-offset-6 {margin-left:  58.33%}
+.col-offset-7 {margin-left:  66.66%}
+.col-offset-8 {margin-left:  75%}
+.col-offset-9 {margin-left:  83.33%}
+.col-offset-10  {margin-left:  91.66%}
+.col-offset-11  {margin-left:  100%}
+/* ======= MEDIA QUERY ======== */
+
+
+/* =========== MEDIA QUERY GRID ====== */
+@media (max-width: 767px){
+	.menu {
+		float: none;
+	}
+	.menu li {
+		float: none;
+		display: block;
+		text-align: center;
+	}
+	header img {
+		display: block;
+		margin: 0 auto;
+	}
+	.hero {
+		height: 50vh;
+	}
+	.slogan {
+		max-width: 300px;
+		font-size: 16px;
+	}
+	.benefits p {
+		padding-right:  10px;
+		padding-left: 10px;
+	}
+	.icon-container {
+		margin-top: 50px;
+	}
+	.gallery .layer {
+ 	 	background: rgba(0, 0, 0, 0);
+ 	 	opacity: 1;
+	}
+	.gallery .layer .fa {
+    	font-size: 30px;
+    	line-height: 40px;
+    	width: 40px;
+    	height: 40px;
+    	background-color: black;
+    	color: white; 
+	}
+	.baner h3 {
+		text-align: center;
+	}
+	.baner img {
+		display: none;
+	}
+	.normal, .italic {
+		margin-left: 20px;
+		margin-right: 20px;
+	}
+	.numbers{
+		font-size: 60px;
+	}
+	.contact {
+		padding: 0;
+	}
+	.social-media {
+		padding-bottom: 30px;
+	}
+	.social-icon {
+		font-size: 30px;
+		width: 50px;
+		height: 50px;
+		line-height: 50px;
+	}
+
+    /* For tablets: */
+    .col-s-1 {width: 8.33%;}
+    .col-s-2 {width: 16.66%;}
+    .col-s-3 {width: 25%;}
+    .col-s-4 {width: 33.33%;}
+    .col-s-5 {width: 41.66%;}
+    .col-s-6 {width: 50%;}
+    .col-s-7 {width: 58.33%;}
+    .col-s-8 {width: 66.66%;}
+    .col-s-9 {width: 75%;}
+    .col-s-10 {width: 83.33%;}
+    .col-s-11 {width: 91.66%;}
+    .col-s-12 {width: 100%;}
+}
+
