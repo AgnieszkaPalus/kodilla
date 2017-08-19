@@ -1,0 +1,28 @@
+{
+  "name": "kodilla-rwd-zad2",
+  "version": "1.0.0",
+  "description": "zadanie z RWD",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AgnieszkaPalus/kodilla.git"
+  },
+  "keywords": [
+    "rwd"
+  ],
+  "author": "a.palus",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AgnieszkaPalus/kodilla/issues"
+  },
+  "homepage": "https://github.com/AgnieszkaPalus/kodilla#readme",
+  "devDependencies": {
+    "grunt": "^1.0.1",
+    "grunt-contrib-imagemin": "^2.0.1",
+    "grunt-contrib-watch": "^1.0.0",
+    "grunt-sass": "^2.0.0"
+  }
+}
